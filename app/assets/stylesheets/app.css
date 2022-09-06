@@ -18,6 +18,20 @@ body {
   font-weight: lighter;
 }
 
+.notice,
+.alert {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.notice {
+  color: crimson;
+}
+
+.alert {
+  color: aquamarine;
+}
+
 .splash {
   width: 100%;
   height: 100vh;
