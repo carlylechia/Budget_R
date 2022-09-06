@@ -1,0 +1,47 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  min-height: 98vh;
+  word-wrap: break-word;
+}
+
+.btn-div {
+  background-color: limegreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.btn-div .new-cat {
+  min-width: 84vw;
+  padding: 1rem;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.group {
+  width: 85vw;
+  background-color: aliceblue;
+  border: 1px solid white;
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.group:hover {
+  border: 1px dotted aquamarine;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

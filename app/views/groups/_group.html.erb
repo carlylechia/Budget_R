@@ -1,12 +1,10 @@
-<div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
-  </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
+<div id="<%= dom_id group %>" class="group">
+  <div class="icon">
+    <%= image_tag group.icon, size: "60x60", alt: "icon" if group.icon %>
+  </div>
+  <div class="name">
+    <strong><%= group.name %></strong>
+    <small><%= group[:created_at] %></small>
+  </div>
 
 </div>

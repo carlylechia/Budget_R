@@ -1,9 +1,31 @@
-<h1>New group</h1>
+<div class="devise-page">
+  <%= form_with(model: @group, local: true) do |form| %>
+    <div class="top">
+      <a href="/"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
+      <h2>NEW CATEGORY</h2>
+      <div class="actions">
+        <%= form.submit "Create", class: 'toplink' %>
+      </div>
+    </div>
+    <% if @group.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(@group.errors.count, "error") %> prohibited this group from being saved:</h2>
 
-<%= render "form", group: @group %>
+        <ul>
+          <% @group.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="rest pad">
+      <div class="field">
+        <%= form.text_field :name, placeholder: 'Name of Category', required: true %>
+      </div>
 
-<br>
-
-<div>
-  <%= link_to "Back to groups", groups_path %>
+      <div class="field">
+        <%= form.text_field :icon, placeholder: 'link to image address', required: true %>
+      </div>
+    </div>
+  <% end %>
 </div>

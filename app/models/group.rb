@@ -1,5 +1,5 @@
 class Group < ApplicationRecord
-  validates :name, presence: true
+  validates :name, :icon, presence: true
 
   belongs_to :user
   has_many :entities, dependent: :destroy

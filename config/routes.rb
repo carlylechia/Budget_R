@@ -3,10 +3,9 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  devise_scope :user do
-    delete '/users/sign_out' => 'devise/sessions#destroy', as: 'sign_out'
-    get '/users/sign_out' => 'devise/sessions#destroy'
-  end
+  # devise_scope :user do
+  #   post 'users/sign_up' => 'devise/registrations#create' as: 'sign_up'
+  # end
 
   resources :groups, only: [:splash, :create, :new, :edit, :update, :destroy] do
     resources :entities
