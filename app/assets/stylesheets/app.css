@@ -1,3 +1,23 @@
+/* stylelint-disable no-descending-specificity */
+:root {
+  --blue: #007fff;
+  --white: #fff;
+  --gray: gray;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--white);
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
 .splash {
   width: 100%;
   height: 100vh;
@@ -12,6 +32,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+  font-family: serif;
 }
 
 .auths {
@@ -24,7 +45,7 @@
 }
 
 .auths a {
-  border: 0.5px solid azure;
+  border: 0.5px solid var(--white);
   border-radius: 0;
   width: 90%;
   text-align: center;
@@ -34,10 +55,87 @@
 }
 
 .auths .login {
-  background-color: #007fff;
+  background-color: var(--blue);
   color: azure;
 }
 
 .auths .signup {
-  color: gray;
+  color: var(--gray);
+}
+
+.devise-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: -1rem;
+}
+
+.devise-page a {
+  text-align: center;
+  color: var(--gray);
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.devise-page a:hover {
+  text-decoration: underline;
+}
+
+.top {
+  background-color: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  max-height: 10vh;
+}
+
+.top a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top a i {
+  font-size: 2rem;
+  margin: 50% 5px;
+  color: var(--white);
+}
+
+.top .actions {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top .actions .toplink {
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: larger;
+  cursor: pointer;
+}
+
+.rest {
+  margin-top: 1rem;
+  border: 1px solid gray;
+}
+
+.rest .field {
+  border-bottom: 1px solid silver;
+}
+
+.rest .field input {
+  width: 96%;
+  outline: none;
+  border: none;
+  padding: 10px 6px;
+  color: var(--gray);
+  font-size: large;
+}
+
+.rem {
+  padding: 10px 4px;
 }
