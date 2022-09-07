@@ -23,6 +23,8 @@
   padding: 1rem;
   border: 2px solid var(--white);
   color: var(--white);
+  text-align: center;
+  text-decoration: none;
 }
 
 .group {

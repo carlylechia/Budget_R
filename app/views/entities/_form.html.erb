@@ -1,27 +1,35 @@
-<%= form_with(model: entity) do |form| %>
-  <% if entity.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(entity.errors.count, "error") %> prohibited this entity from being saved:</h2>
+<div class="devise-page">
+  <%= form_with model: [@group, @group.entities.build], local: true do |form| %>
+    <div class="top">
+      <a href="<%= group_path(@group) %>"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
+      <h2>NEW TRANSACTION</h2>
+      <div class="actions">
+        <%= form.submit "Create", class: 'toplink' %>
+      </div>
+    </div>
+    <% if entity.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(entity.errors.count, "error") %> prohibited this entity from being saved:</h2>
 
-      <ul>
-        <% entity.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
+        <ul>
+          <% entity.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="rest">
+      <div class="field">
+        <%= form.text_field :name, placeholder: 'Transaction Name', required: true %>
+      </div>
+
+      <div class="field" >
+        <%= form.number_field :amount, placeholder: 'Transaction Cost', required: true %>
+      </div>
+
+      <div class="field">
+        <%= form.select :group_id, current_user.groups.collect {|group| [group.name, group.id]},{ include_blank: true}, class:"custom-select", id:"inputGroupSelect01", placeholder: 'Transaction Category', required: true %><br>
+      </div>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div>
-    <%= form.label :amount, style: "display: block" %>
-    <%= form.text_field :amount %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+</div>

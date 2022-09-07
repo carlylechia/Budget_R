@@ -1,7 +1,7 @@
 <div class="details-page">
   <div class="top">
     <a href="/"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
-    <h2>DETAILS</h2>
+    <h2>TRANSACTIONS</h2>
     <div class="actions">
       <p class="no-show">Nothing</p>
     </div>
@@ -14,9 +14,11 @@
     <div class="description">
       <p><%= @group.description %></p>
     </div>
-  </div>
-  <div class="transactions">
-  </div>
+    <div class="transactions">
+    </div>
+</div>
+<div class="btn-div">
+  <%= link_to "NEW TRANSACTION", new_group_entity_path(@group.id), class: 'new-cat' %>
 </div>
 <div>
   <%= link_to "Edit this group", edit_group_path(@group) %> |
