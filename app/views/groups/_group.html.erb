@@ -6,5 +6,6 @@
     <strong><%= group.name %></strong>
     <small><%= group[:created_at] %></small>
   </div>
+  <strong>$<%= group.entities.sum(&:amount) %></strong>
 
 </div>

@@ -3,26 +3,30 @@
     <a href="/"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
     <h2>TRANSACTIONS</h2>
     <div class="actions">
-      <p class="no-show">Nothing</p>
+      <%= link_to "Edit", edit_group_path(@group), class: 'toplink' %>
     </div>
   </div>
   <div class="down">
     <div class="group-info">
       <%= image_tag @group.icon, size: "60x60", alt: "icon" %>
-      <strong><%= @group.name %></strong>
+      <h2><%= @group.name.upcase %></h2>
+      <strong>Total Amount: $<%= @total %></strong>
     </div>
     <div class="description">
       <p><%= @group.description %></p>
+      <%= button_to "Delete Category", @group, method: :delete, class: 'delete' %>
     </div>
     <div class="transactions">
+      <% @entities.each do |entity| %>
+        <strong><%= entity.name.upcase %></strong>
+        <small><%= entity[:created_at] %></small>
+        <h4>Amount: $<%= entity.amount %><h4>
+        <hr>
+      <% end %>
     </div>
 </div>
 <div class="btn-div">
   <%= link_to "NEW TRANSACTION", new_group_entity_path(@group.id), class: 'new-cat' %>
 </div>
 <div>
-  <%= link_to "Edit this group", edit_group_path(@group) %> |
-  <%= link_to "Back to groups", groups_path %>
-
-  <%= button_to "Destroy this group", @group, method: :delete %>
 </div>

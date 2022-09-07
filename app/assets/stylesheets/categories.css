@@ -72,3 +72,13 @@
   padding: 0 1rem 1rem 1rem;
   border-bottom: 1px solid silver;
 }
+
+.description p {
+  color: silver;
+}
+
+.delete {
+  background-color: crimson;
+  padding: 0.5rem;
+  color: var(--white);
+}
