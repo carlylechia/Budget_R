@@ -82,3 +82,18 @@
   padding: 0.5rem;
   color: var(--white);
 }
+
+.transactions {
+  display: block;
+}
+
+.whole {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trans {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

@@ -18,9 +18,13 @@
     </div>
     <div class="transactions">
       <% @entities.each do |entity| %>
-        <strong><%= entity.name.upcase %></strong>
-        <small><%= entity.created_at.strftime("%d-%b-%Y")  %></small>
+        <div class="whole">
+        <div class="trans">
+          <strong><%= entity.name.upcase %></strong>
+          <small><%= entity.created_at.strftime("%d-%b-%Y")  %> at <%= entity.created_at.strftime("%l:%M %P") %></small>
+        </div>
         <h4>Amount: $<%= entity.amount %><h4>
+        </div>
         <hr>
       <% end %>
     </div>
