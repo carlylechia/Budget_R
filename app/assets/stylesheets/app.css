@@ -44,11 +44,16 @@ body {
 
 .logo {
   display: flex;
+  flex-direction: column;
   height: 80%;
   width: 100%;
   align-items: center;
   justify-content: center;
   font-family: serif;
+}
+
+.logo small {
+  color: var(--blue);
 }
 
 .auths {
