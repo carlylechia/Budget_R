@@ -67,6 +67,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to Microverse
+- Kudos to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella), for the exceptional design.
 
 ## 📝 License
 
