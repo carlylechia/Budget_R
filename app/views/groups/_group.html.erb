@@ -4,7 +4,7 @@
   </div>
   <div class="name">
     <strong><%= group.name %></strong>
-    <small><%= group[:created_at] %></small>
+    <small><%= group.created_at.strftime("%d-%b-%Y")  %></small>
   </div>
   <strong>$<%= group.entities.sum(&:amount) %></strong>
 

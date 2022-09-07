@@ -19,7 +19,7 @@
     <div class="transactions">
       <% @entities.each do |entity| %>
         <strong><%= entity.name.upcase %></strong>
-        <small><%= entity[:created_at] %></small>
+        <small><%= entity.created_at.strftime("%d-%b-%Y")  %></small>
         <h4>Amount: $<%= entity.amount %><h4>
         <hr>
       <% end %>
