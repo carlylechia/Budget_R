@@ -156,3 +156,7 @@ body {
 .rem {
   padding: 10px 4px;
 }
+
+.no-show {
+  visibility: hidden;
+}

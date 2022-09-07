@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   #   post 'users/sign_up' => 'devise/registrations#create' as: 'sign_up'
   # end
 
-  resources :groups, only: [:splash, :create, :new, :edit, :update, :destroy] do
+  resources :groups, only: [:splash, :index, :show, :create, :new, :edit, :update, :destroy] do
     resources :entities
   end
 

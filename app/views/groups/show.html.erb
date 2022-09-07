@@ -1,7 +1,23 @@
-<p style="color: green"><%= notice %></p>
-
-<%= render @group %>
-
+<div class="details-page">
+  <div class="top">
+    <a href="/"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
+    <h2>DETAILS</h2>
+    <div class="actions">
+      <p class="no-show">Nothing</p>
+    </div>
+  </div>
+  <div class="down">
+    <div class="group-info">
+      <%= image_tag @group.icon, size: "60x60", alt: "icon" %>
+      <strong><%= @group.name %></strong>
+    </div>
+    <div class="description">
+      <p><%= @group.description %></p>
+    </div>
+  </div>
+  <div class="transactions">
+  </div>
+</div>
 <div>
   <%= link_to "Edit this group", edit_group_path(@group) %> |
   <%= link_to "Back to groups", groups_path %>
