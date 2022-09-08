@@ -1,8 +1,11 @@
-example_id                        | status  | run_time        |
---------------------------------- | ------- | --------------- |
-./spec/models/entity_spec.rb[1:1] | pending | 0.00001 seconds |
-./spec/models/group_spec.rb[1:1]  | pending | 0.00002 seconds |
-./spec/models/user_spec.rb[1:1:1] | passed  | 0.01174 seconds |
-./spec/models/user_spec.rb[1:1:2] | passed  | 0.13374 seconds |
-./spec/models/user_spec.rb[1:2:1] | passed  | 0.01285 seconds |
-./spec/models/user_spec.rb[1:2:2] | passed  | 0.0098 seconds  |
+example_id                         | status  | run_time        |
+---------------------------------- | ------- | --------------- |
+./spec/models/entity_spec.rb[1:1]  | pending | 0.00002 seconds |
+./spec/models/group_spec.rb[1:1:1] | passed  | 0.02902 seconds |
+./spec/models/group_spec.rb[1:1:2] | passed  | 0.00972 seconds |
+./spec/models/group_spec.rb[1:2:1] | passed  | 0.00652 seconds |
+./spec/models/group_spec.rb[1:2:2] | passed  | 0.09186 seconds |
+./spec/models/user_spec.rb[1:1:1]  | passed  | 0.00908 seconds |
+./spec/models/user_spec.rb[1:1:2]  | passed  | 0.01006 seconds |
+./spec/models/user_spec.rb[1:2:1]  | passed  | 0.01094 seconds |
+./spec/models/user_spec.rb[1:2:2]  | passed  | 0.00862 seconds |
