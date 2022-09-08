@@ -31,6 +31,10 @@ You will create a Ruby on Rails application that allows the user to:
 - Devise
 - Rspec & Capybara
 
+## Deployment
+Our mobile app was deployed to Heroku, and the link is provided below. Feel free to click the link, visit the app online and use it accordingly:
+- [Budget_R](https://budget-r.herokuapp.com/)
+
 ## SetUp
 To get a local copy up and running, follow these steps:
 
