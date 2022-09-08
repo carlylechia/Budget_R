@@ -1,6 +1,6 @@
 # BUDGET APP
 
-The Budget_R app was built as the capstone project at the end of the Ruby on Rails module at @Microverse. It is about building a mobile web application where you, the user, can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+The Budget_R app was built as the capstone project at the end of the Ruby on Rails module at @Microverseinc. It is about building a mobile web application where you, the user, can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 This application allows the user to:
 
@@ -20,6 +20,17 @@ This application allows the user to:
 
 ![](app/assets/images/budget_erd.png)
 
+## Screenshots Of Some Key Views
+
+1. **Splash Screen**
+![](app/assets/images/splash.png)
+
+2. **Categories Page**
+![](app/assets/images/categories.png)
+
+3. **Transactions Page**
+![](app/assets/images/transactions.png)
+
 ## Built with
 - Ruby
 - Rails (RoR)
@@ -27,6 +38,13 @@ This application allows the user to:
 - Stylelint
 - Devise
 - Rspec & Capybara
+
+## Deployment
+Our mobile app was deployed to Heroku, and the link is provided below. Feel free to click the link, visit the app online and use it accordingly:
+- [Budget_R](https://budget-r.herokuapp.com/)
+
+## Video Presentation
+Watch this [loom video](https://www.loom.com/share/e5118955bfc543f7ad8d105dffaa4216) to get introduced to our Budget_R application.
 
 ## SetUp
 To get a local copy up and running, follow these steps:
@@ -75,6 +93,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to Microverse
+- Kudos to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella), for the exceptional design.
 
 ## 📝 License
 

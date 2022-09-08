@@ -1,0 +1,41 @@
+<div class="devise-page">
+
+  <%= form_for(resource, as: resource_name, url: new_user_registration_path) do |f| %>
+    <div class="top">
+      <a href="/splash"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </a>
+      <h2>REGISTER</h2>
+      <div class="actions">
+        <%= f.submit "NEXT", class: 'toplink' %>
+      </div>
+    </div>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="rest">
+      <div class="field">
+        <%= f.label :name %><br />
+        <%= f.text_field :name %>
+      </div>
+      
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      </div>
+    </div>
+  <% end %>
+  <p>Already have an account?</p>
+
+  <%= render "devise/shared/links" %>
+</div>

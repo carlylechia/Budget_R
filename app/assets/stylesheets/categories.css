@@ -1,0 +1,99 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  min-height: 98vh;
+  word-wrap: break-word;
+}
+
+.btn-div {
+  background-color: limegreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.btn-div .new-cat {
+  min-width: 84vw;
+  padding: 1rem;
+  border: 2px solid var(--white);
+  color: var(--white);
+  text-align: center;
+  text-decoration: none;
+}
+
+.group {
+  width: 85vw;
+  background-color: aliceblue;
+  border: 1px solid white;
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.group:hover {
+  border: 1px dotted aquamarine;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.details-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.down {
+  width: 90vw;
+  background-color: aliceblue;
+  margin-top: 1rem;
+}
+
+.group-info {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  color: var(--gray);
+}
+
+.description {
+  padding: 0 1rem 1rem 1rem;
+  border-bottom: 1px solid silver;
+}
+
+.description p {
+  color: silver;
+}
+
+.delete {
+  background-color: crimson;
+  padding: 0.5rem;
+  color: var(--white);
+}
+
+.transactions {
+  display: block;
+}
+
+.whole {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trans {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
