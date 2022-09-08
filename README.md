@@ -35,6 +35,9 @@ You will create a Ruby on Rails application that allows the user to:
 Our mobile app was deployed to Heroku, and the link is provided below. Feel free to click the link, visit the app online and use it accordingly:
 - [Budget_R](https://budget-r.herokuapp.com/)
 
+## Video Presentation
+Watch this [loom video](https://www.loom.com/share/e5118955bfc543f7ad8d105dffaa4216) to get introduced to our Budget_R application.
+
 ## SetUp
 To get a local copy up and running, follow these steps:
 
