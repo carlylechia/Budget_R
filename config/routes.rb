@@ -3,9 +3,9 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  # devise_scope :user do
-  #   post 'users/sign_up' => 'devise/registrations#create' as: 'sign_up'
-  # end
+  devise_scope :user do
+    post 'users/sign_up' => 'devise/registrations#create'
+  end
 
   resources :groups, only: [:splash, :index, :show, :create, :new, :edit, :update, :destroy] do
     resources :entities
