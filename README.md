@@ -12,6 +12,17 @@ You will create a Ruby on Rails application that allows the user to:
 
 ![](app/assets/images/budget_erd.png)
 
+## Screenshots Of Some Key Views
+
+1. **Splash Screen**
+![](app/assets/images/splash.png)
+
+2. **Categories Page**
+![](app/assets/images/categories.png)
+
+3. **Transactions Page**
+![](app/assets/images/transactions.png)
+
 ## Built with
 - Ruby
 - Rails (RoR)
