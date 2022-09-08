@@ -1,8 +1,20 @@
 /* stylelint-disable no-descending-specificity */
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('Proxima Nova Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: url('Proxima Nova Light.ttf');
+}
+
 :root {
   --blue: #007fff;
   --white: #fff;
   --gray: gray;
+  --font-bold: 'Proxima Nova Bold', sans-serif;
+  --font-light: 'Proxima Nova Light', sans-serif;
 }
 
 html,
@@ -14,10 +26,22 @@ body {
 
 body {
   background-color: var(--white);
-  font-family: sans-serif;
-  font-weight: lighter;
+  font-family: var(--font-light);
   max-width: 100vw;
   overflow-x: hidden;
+}
+
+p {
+  font-family: var(--font-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-bold);
 }
 
 .notice,
