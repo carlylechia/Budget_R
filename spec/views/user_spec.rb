@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe 'users/index', type: :view do
   it 'should get splash on root' do
     visit root_path
-    expect(page).to have_content('LOGIN')
-    expect(page).to have_content('sign in')
+    expect(page).to have_content('Budget_R')
+    expect(page).to have_content('Log in')
   end
 
   it 'should get sign up new user' do
@@ -14,7 +14,7 @@ RSpec.describe 'users/index', type: :view do
     fill_in 'user[password]', with: '123456'
     fill_in 'user[password_confirmation]', with: '123456'
     click_button 'NEXT'
-    expect(current_path).to eq('/')
+    expect(current_path).to eq('/groups')
     expect(page).to have_content('CATEGORIES')
   end
 end
